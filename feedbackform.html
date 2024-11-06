@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Feedback Form</title>
+</head>
+<body>
+	<div style="text-align:center;">
+		<h1>FEEDBACK</h1>
+		<p>You can help us to improve our website by using the following form to let us know what you think or what needs to be changed.</p>
+	</div>
+	<form method="post" action="">
+		<table align="center">
+			<tr>
+				<td style="width: 30%;">
+					<label for="name">Name:</label>
+				</td>
+				<td style="width: 70%;">
+					<input class="caixa" type="text" id="name" name="name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="email">Email address:</label>
+				</td>
+				<td>
+					<input class="caixa" type="email" id="email" name="email">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="club">Are you a club member:</label>
+				</td>
+				<td>
+					<input type="checkbox" id="club" name="club" checked>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="age">Your age:</label>
+				</td>
+				<td>
+					<input type="radio" id="<=20" name="age" value="<=20">
+					<label for="<=20"><=20</label><br>
+					<input type="radio" id="21-30" name="age" value="21-30" checked>	
+					<label for="21-30">21-30</label><br>
+					<input type="radio" id="31-40" name="age" value="31-40">
+					<label for="31-40">31-40</label><br>
+					<input type="radio" id=">40" name="age" value=">40">
+					<label for=">40">>40</label><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="state">Your state:</label>
+				</td>
+				<td>
+					<select id="state" name="state">
+						<option value="Western Australia">Western Australia</option>
+						<option value="South Australia">South Australia</option>
+						<option value="Queensland">Queensland</option>
+						<option value="New South Wales">New South Wales</option>
+						<option value="Victoria">Victoria</option>
+						<option value="Tasmania">Tasmania</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="site">How did you find our site:</label>
+				</td>
+				<td>
+					<select id="site" name="site" multiple="">
+						<option value="Web Search">Web Search</option>
+						<option value="Link on another site">Link on another site</option>
+						<option value="Told about it">Told about it</option>
+						<option value="Quim cavalo">Quim cavalo</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="name">Site suggestions:</label>
+				</td>
+				<td>
+					<input class="caixa" type="text" id="name" name="name" placeholder="Type your suggestion here">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="name">Other comments:</label>
+				</td>
+				<td>
+					<input class="caixa" type="text" id="name" name="name" placeholder="Additional comments here">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input class="botao" type="submit" value="Submit">
+					<input class="botao" type="reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
