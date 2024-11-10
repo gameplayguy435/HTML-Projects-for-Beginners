@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign Up Form</title>
+	<style>
+		body{
+			background-color: #000629;
+		}
+		td{
+			height: 40px;
+		}
+		table{
+			width: 70%;
+			background-color: #222536;
+		}
+		label{
+			color: #d2d636;
+			padding-right: 10px;
+		}
+		.title{
+			color: #d2d636;
+			background-color: #de8704;
+			text-align: center;
+		}
+		.submit{
+			background-color: green;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+		}
+		.cancel{
+			background-color: red;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+<form method="post" action="">
+		<table align="center">
+			<tr>
+				<td class="title" colspan="2"><h2>Sign Up</h2></td>
+			</tr>
+			<tr>
+				<td align="right" style="width: 40%;">
+					<label class="label" for="fname">First Name</label>
+				</td>
+				<td style="width: 60%;">
+					<input type="text" id="fname" name="fname">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="lname">Last Name</label>
+				</td>
+				<td>
+					<input type="text" id="lname" name="lname">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="date">Date of Birth</label>
+				</td>
+				<td>
+					<input type="date" id="date" name="date">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="gender">Gender</label>
+				</td>
+				<td>
+					<input type="radio" id="male" name="gender" value="Male">
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="Female">
+					<label for="female">Female</label>
+					<input type="radio" id="other" name="gender" value="Other">
+					<label for="other">Other</label>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="country">Country</label>
+				</td>
+				<td>
+					<select id="country">
+						<option>Country</option>
+						<option>India</option>
+						<option>USA</option>
+						<option>UK</option>
+						<option>Japan</option>
+						<option>China</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="email">E-mail</label>
+				</td>
+				<td>
+					<input type="email" id="email" name="email">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="phone">Phone Number</label>
+				</td>
+				<td>
+					<input type="tel" id="phone" name="phone">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="pass">Password</label>
+				</td>
+				<td>
+					<input type="password" id="pass" name="pass">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="verifpass">Confirm Password</label>
+				</td>
+				<td>
+					<input type="password" id="verifpass" name="verifpass">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="terms">I agree to the Terms of Use</label>
+				</td>
+				<td>
+					<input type="checkbox" id="terms" name="terms">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: right; background-color: #de8704;">
+					<input class="submit" type="submit" value="Submit">
+					<input class="cancel" type="reset" value="Cancel">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
