@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Happy Halloween</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+	<style>
+		body{
+			background-color: black;
+			box-sizing: border-box;
+			font-family: Creepster;
+		}
+		nav{
+			width: 20%;
+			text-align: center;
+			margin: auto;
+		}
+		h1{
+			font-size: 20px;
+			color: white;
+		}
+		video{
+			width: 100%;
+		}
+		form{
+			padding: 20px;
+		}
+		input, select, textarea{
+			height: 30px;
+			width: 100%;
+			color: red;
+			font-family: Creepster;
+			border: 1px solid grey;
+			padding-left: 5px;
+			box-sizing: border-box;
+		}
+		input::placeholder, textarea::placeholder{
+			color: red;
+			font-family: Creepster;
+		}
+		nav a{
+			color: white;
+		}
+		nav a:hover{
+			background-color: white;
+			color: red;
+			text-decoration-color: red;
+		}
+		a{
+			color: yellow;
+			padding-right: 10px;
+		}
+		a:hover{
+			color: white;
+			text-decoration-color: red;
+		}
+		.flex-container{
+			width: 84%;
+			margin-left: 8%;
+			margin-right: 8%;
+			margin-top: 5%;
+			margin-bottom: 2.5%;
+			border: 1px dotted white;
+		}
+		.content{
+			display: flex;
+			width: 100%;
+			overflow: hidden;
+			flex-direction: column;
+		}
+		.banner{
+			width: 100%;
+		}
+		.desc{
+			display: flex;
+			width: 80%;
+			background-color: white;
+			height: 10%;
+			flex-direction: column;
+		}
+		.header{
+			display: flex;
+		}
+		.title{
+			width: 100%;
+			padding-left: 15px;
+			font-size: 50%;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.info{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			padding-bottom: 20px;
+			align-items: center;
+		}
+		.pumpkin{
+			width: 20%;
+			padding-left: 15px;
+		}
+		.desctext{
+			width: 70%;
+			padding-left: 15px;
+		}
+		.story{
+			background-color: #b71b1b;
+			padding-left: 10px;
+		}
+		.halloween{
+			display: flex;
+			color: white;
+			justify-content: center;
+			align-items: center;
+			background-image: url("../assets/images/banner.jpg");
+			margin-top: 5px;
+			margin-bottom: 0px;
+			background-repeat: no-repeat;
+			background-size: 160% 100%;
+			height: 100px;
+			width: 100%;
+		}
+		.video{
+			padding-left: 10px;
+		}
+		.signup{
+			padding-left: 10px;
+		}
+		.submit{
+			color: white;
+			background-color: #ff0000;
+			border: none;
+		}
+		.submit:hover{
+			background-color: #f2711b;
+		}
+		.footer-container{
+			display: flex;
+			color: white;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.footer{
+			font-size: x-small;
+			width: 33%;
+		}
+		.back{
+			width: 100%;
+			text-align: right;
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="content">
+			<div class="banner" id="banner">
+				<div class="halloween">
+					<h1 style="font-size: 35px;">
+						Halloween
+					</h1>
+				</div>
+			</div>
+			<div class="header">
+				<nav>
+					<a href="#banner">Home</a><br>
+					<a href="#story">Story</a><br>
+					<a href="#signup">Sign Up</a><br>
+					<a href="#video">Video</a>
+				</nav>
+				<div class="desc">
+					<div class="title">
+						<h1 style="color: black;">
+							Halloween
+						</h1>
+					</div>
+					<div class="info">
+						<div class="pumpkin">
+							<img src="..\assets\images\pumpkin.jpg" width="100%" alt="Pumpkin">
+						</div>
+						<div class="desctext">
+							<p>
+								Halloween is a celebration observed in various countries, primarily in the English-speaking world, on October 31st, the eve of the Western Christian feast of All Saints' Day. It begins with the three-day vigil of Allhallowtide, the time of the liturgical year dedicated to remembering the dead, including saints (hallows), martyrs, and all the faithful departed.
+							</p>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="story" id="story">
+				<h1 style="color: white;">
+					Story
+				</h1>
+				<p>
+					The origin of Halloween traces back to the traditions of people who inhabited Gaul and the British Isles between 600 BC and 800 AD, although with notable differences from the current pumpkins or the very famous phrase "trick or treat", exported by the United States, which popularized the celebration. Originally, Halloween had no connection to witches. It was a festival in the Celtic calendar of Ireland, the Samhain festival, celebrated between October 30 and November 2, and marked the end of summer (samhain literally means "end of summer").
+				</p>
+				<div class="back">
+					<a href="#banner">Back</a>
+				</div>
+			</div>
+			<div class="video" id="video">
+				<h1>
+					Video
+				</h1>
+				<video src="..\assets\videos\video.mp4" controls></video>
+				<div class="back">
+					<a href="#banner">Back</a>
+				</div>
+			</div>
+			<div class="signup" id="signup">
+				<h1>Sign Up</h1>
+				<form method="post">
+					<input type="text" id="name" name="name" placeholder="Name"><br>
+					<input type="email" id="email" name="email" placeholder="Email"><br>
+					<select id="service" name="service">
+						<option value="">Choose Service</option>
+						<option value="johndoe">John Doe</option>
+						<option value="loremipsum">Lorem Ipsum</option>
+						<option value="bluehorse">Blue Horse</option>
+						<option value="pumpkin">Pumpkin</option>	
+					</select><br>
+					<textarea name="obs" rows="50" placeholder="Message"></textarea><br>
+					<input class="submit" type="submit" id="submit" name="submit" value="Leave your message"><br>
+				</form>
+				<div class="back">
+					<a href="#banner">Back</a>
+				</div>
+			</div>
+			<div class="footer-container">
+				<div class="footer">
+					<p>Gameplay Guy</p>
+				</div>
+				<div class="footer" style="text-align: center;">
+					<p>All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
