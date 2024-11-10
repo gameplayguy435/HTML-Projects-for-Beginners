@@ -1,9 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Feedback Form</title>
+	<style>
+		body{
+			background-color: #8e5eff;
+		}
+		h1{
+			color: #ff0404;
+			text-shadow: 3px 3px 5px black;
+			font-style: italic;
+			font-size: 40px;
+			font-family: cursive;
+			text-align: center;
+		}
+		input{
+			border: inset ;
+		}
+		select{
+			border: inset;
+		}
+		td{
+			text-align: left;
+			vertical-align: top;
+			padding: 5px;
+		}
+		table{
+			width: 70%;
+		}
+		.box{
+			width: 100%;
+		}
+		.button{
+			border: outset #0f2d26;
+			background-color: #1f605f;
+			color: white;
+		}
+	</style>
 </head>
 <body>
 	<div style="text-align:center;">
@@ -17,7 +52,7 @@
 					<label for="name">Name:</label>
 				</td>
 				<td style="width: 70%;">
-					<input class="caixa" type="text" id="name" name="name">
+					<input class="box" type="text" id="name" name="name">
 				</td>
 			</tr>
 			<tr>
@@ -25,7 +60,7 @@
 					<label for="email">Email address:</label>
 				</td>
 				<td>
-					<input class="caixa" type="email" id="email" name="email">
+					<input class="box" type="email" id="email" name="email">
 				</td>
 			</tr>
 			<tr>
@@ -75,7 +110,7 @@
 						<option value="Web Search">Web Search</option>
 						<option value="Link on another site">Link on another site</option>
 						<option value="Told about it">Told about it</option>
-						<option value="Quim cavalo">Quim cavalo</option>
+						<option value="Social Media">Social Media</option>
 					</select>
 				</td>
 			</tr>
@@ -84,7 +119,7 @@
 					<label for="name">Site suggestions:</label>
 				</td>
 				<td>
-					<input class="caixa" type="text" id="name" name="name" placeholder="Type your suggestion here">
+					<input class="box" type="text" id="name" name="name" placeholder="Type your suggestion here">
 				</td>
 			</tr>
 			<tr>
@@ -92,13 +127,13 @@
 					<label for="name">Other comments:</label>
 				</td>
 				<td>
-					<input class="caixa" type="text" id="name" name="name" placeholder="Additional comments here">
+					<input class="box" type="text" id="name" name="name" placeholder="Additional comments here">
 				</td>
 			</tr>
 			<tr>
 				<td colspan="2" style="text-align: center;">
-					<input class="botao" type="submit" value="Submit">
-					<input class="botao" type="reset" value="Reset">
+					<input class="button" type="submit" value="Submit">
+					<input class="button" type="reset" value="Reset">
 				</td>
 			</tr>
 		</table>

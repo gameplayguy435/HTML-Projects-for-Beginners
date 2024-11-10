@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Float and Alignment</title>
+	<style>
+		#border{
+			position: relative;
+			border: 5px solid black;
+		}
+		#top{
+			position: relative;
+			width: 100%;
+			height: 120px;
+			background-color: #6666ff;
+			text-align: center;
+			line-height: 120px;
+		}
+		#left{
+			position: relative;
+			float: left;
+			width: 33%;
+			height: 400px;
+			background-color: #ff0000;
+			text-align: center;
+			line-height: 400px;
+		}
+		#center{
+			position: relative;
+			float: left;
+			width: 34%;
+			height: 400px;
+			background-color: #ffff00;
+			text-align: center;
+			line-height: 400px;
+		}
+		#right{
+			position: relative;
+			width: 33%;
+			height: 400px;
+			float: left;
+			background-color: #008000;
+			text-align: center;
+			line-height: 400px;
+		}
+		#footer{
+			position: relative;
+			width: 100%;
+			height: 40px;
+			background-color: #6666FF;
+			clear: both;
+			text-align: center;
+			line-height: 40px;
+		}
+		.align{
+			margin: 0px;
+			padding: 0px;
+		}
+	</style>
+</head>
+<body style="background-color: #CCCCCC; margin: 0px;">
+	<div id="border">
+		<div id="top">
+			<p class="align">
+				Top
+			</p>
+		</div>
+		<div id="left">
+			<p class="align">
+				Column 1
+			</p>
+		</div>
+		<div id="center">
+			<p class="align">
+				Column 2
+			</p>
+		</div>
+		<div id="right">
+			<p class="align">
+				Column 3
+			</p>
+		</div>
+		<div id="footer">
+			<p class="align">
+				Footer
+			</p>
+		</div>
+	</div>
+</body>
+</html>
