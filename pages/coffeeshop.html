@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jake's Coffee Shop</title>
+	<!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<style>
 		body{
 			background-color: #ffffcc;
@@ -31,6 +33,7 @@
 			width: 25%;
 			height: 400px;
 			background-color: #e8d882;
+			padding-top: 15px;
 		}
 		#right{
 			position: relative;
@@ -51,7 +54,7 @@
 		}
 		#container{
 			margin: auto;
-			padding-top: 20px;
+			padding: 20px 0px;
 			width: 80%;
 			font-family:verdana;
 			color: #330000;
@@ -68,9 +71,20 @@
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
+		.navbar {
+			background-color: #000913;
+		}
 	</style>
 </head>
 <body>
+	<nav class="navbar  navbar-expand-sm bg-body-dark border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="..\assets\images\favicon.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                <span class="align-middle text-light">HTML Projects for Beginners</span>
+            </a>
+        </div>
+    </nav>
 	<div id="container">
 		<div id="border">
 			<div id="top">
@@ -96,9 +110,8 @@
 					<p>23 Pine Road <br>Nottingham, NG1 5YU <br>0115 9324567</p>
 				</div>
 				<div id="image">
-					<img src="../assets/images/coffee.jpg" alt="Morning Coffee">
+					<img src="..\assets\images\coffee.jpg" alt="Morning Coffee">
 				</div>
-				
 			</div>
 			<div id="footer">
 				<p style="padding-top: 10px;">
@@ -110,5 +123,7 @@
 			</div>
 		</div>
 	</div>
+	<!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
